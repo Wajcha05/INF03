@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria zdjęć</title>
+    <link rel="stylesheet" href="styl5.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <div class="baner">
+        <h1>Zdjęcia kotów</h1>
+    </div>
+    <div>
+        <div class="lewy">
+            <h2>Kategorie</h2>
+            <ul>
+                <li><a href="psy.html">Psy</a></li>
+                <li><a href="koty.html">Koty</a></li>
+                <li>Gryzonie</li>
+                <li>Jaszczurki</li>
+                <li>Inne zdjęcia</li>
+            </ul>
+            <h4><a href="index.html">Powrót do strony głównej</a></h4>
+        </div>
+        <div class="prawy1">
+            <h1>Wybierz zdjęcie</h1>
+            <img src="kot1.jpg" alt="kot1" id="kot1" onmouseover="najechanie('kot1', 'kot1-szary.jpg')" onclick="klikniecie('kot1', 'kot1.jpg')" onmouseout="opuszczenie('kot1', 'kot1.jpg')">
+        </div>
+        <div class="prawy2">
+            <img src="kot1.jpg" alt="kot-duzy" id="zamiana">
+        </div>
+    </div>
+    <div class="stopka">
+        <p>Galerie zdjęć opracował: <i>00000000000</i></p>
+    </div>
+</body>
+</html>
