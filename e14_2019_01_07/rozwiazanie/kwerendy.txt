@@ -1,0 +1,4 @@
+SELECT `nazwa`,`opis`,`cena` FROM `podzespoly` WHERE `typy_id`=1;
+SELECT `id`,`nazwa` FROM `podzespoly` WHERE `dostepnosc`=1 && `cena`<400;
+SELECT podzespoly.nazwa, typy.kategoria FROM `podzespoly` JOIN typy ON podzespoly.typy_id = typy.id WHERE `typy_id` = 1;
+ALTER TABLE `typy` ADD `opis` TEXT NOT NULL AFTER `kategoria`;

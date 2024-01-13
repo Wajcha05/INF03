@@ -1,0 +1,40 @@
+body{
+    font-family: Verdana;
+}
+#logo{
+    background-color: #FF9F79;
+    height: 270px;
+    width: 30%;
+    float: left;
+}
+#lista, #formularz{
+    background-color: #FF9F79;
+    color: green;
+    height: 270px;
+    width: 35%;
+    float: left;
+}
+#glowny{
+    background-color: #80CDAC;
+    height: 400px;
+    padding: 30px;
+    text-align: center;
+    float: left;
+}
+#stopka{
+    background-color: #188256;
+    height: 150px;
+    padding: 10px;
+    clear: both;
+}
+a{
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: orange;
+}
+a:visited{
+    background-color: violet;
+}
