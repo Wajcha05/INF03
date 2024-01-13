@@ -1,4 +1,0 @@
-SELECT `nazwa`,`cena` FROM `towary` WHERE `id`<5;
-SELECT `cena` FROM `towary` WHERE `nazwa`='Cyrkiel';
-SELECT `nazwa` FROM `towary`;
-SELECT `promocja`, COUNT(`id`) AS ilosc FROM `towary` GROUP BY `promocja`;
