@@ -37,13 +37,13 @@
 > 
 >  Autor rozwiązania: Wajha
 
-### Arkusz ee09_2020_06_02 lub ee09_2020_06_06 — BRAKUJĄCY, PROSIMY O PODESŁANIE ROZWIĄZANIA DO ZADANIA
+### [Arkusz ee09_2020_06_06](https://github.com/Wajcha05/INF03/tree/main/ee09_2020_06_06)
 
 > Języki: HTML, CSS, PHP
 >  
 > Przypuszczane daty wystąpienia tego artykułu na egzaminie (lub jej lekkiej zmiany): 16.01.2024 r. godz 17:00, 18.01.2024 r. godz 8:00
 >
->  Autor rozwiązania: *NULL*
+>  Autor rozwiązania: DavidStream
 
 ### [Arkusz e14_2019_01_11](https://github.com/Wajcha05/INF03/tree/main/e14_2019_01_11)
 
