@@ -13,7 +13,7 @@
 >
 >  Autor rozwiązania: Wajha
 
-### [Arkusz e14_2019_06](https://github.com/Wajcha05/INF03/tree/main/e14_2019_06_02)
+### [Arkusz e14_2019_06_02](https://github.com/Wajcha05/INF03/tree/main/e14_2019_06_02)
 
 > Języki: HTML, CSS, PHP
 >  
