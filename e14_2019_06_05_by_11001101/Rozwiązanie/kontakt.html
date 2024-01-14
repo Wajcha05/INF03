@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi informatyczne</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div id="kontener">
+        <div id="logo">
+            <img src="logo.png" alt="logo firmy">
+        </div>
+        <div id="menu">
+            <a href="index.html">O nas</a>
+            <a href="usługi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div id="baner">
+            <img src="animacja.gif">
+        </div>
+        <div id="glowny">
+            <hr>
+            <h2>Kontakt</h2>
+            <table>
+                <form>
+                    <tr> <td>Imię</td> <td> <input type="text" id="im"> </td> </tr>
+                    <tr> <td>Nazwisko:</td> <td> <input type="text" id="nazw"> </td> </tr>
+                    <tr> <td>E-mail</td> <td> <input type="email" id="em"> </td> </tr>
+                    <tr> <td>Usługa: </td> <td> <textarea id="area"></textarea> </td> </tr>
+                    <tr> <td><input type="checkbox" id="check"></td> <td>Zapoznałam/em się z regulaminem</td> </tr>
+                    <tr> <td></td> <td><input type="reset"><input type="button" value="Prześlij" onclick="skrypt()"></td></tr>
+                </form>
+            </table>
+            <span id="span"></span>
+            <hr>
+            <script>
+                function skrypt(){
+                    var imn = document.getElementById("im").value;
+                    var nazwis = document.getElementById("nazw").value;
+                    var email = document.getElementById("em").value;
+                    var usl = document.getElementById("area").value;
+                    var checkbox = document.getElementById("check").checked;
+                    if(checkbox==false){
+                        span.innerHTML = "<p>Musisz zapoznac sie z regulaminem</p>";
+                        span.style.color = "red";
+                    }
+                    if(checkbox==true){
+                        span.style.color = "black";   
+                        span.innerHTML = "<p id=duze>"+imn+""+nazwis+"</p><br>Treść Twojej sprawy:"+usl+"<br>Na podany e-mail zostanie wysłana oferta";
+                        duze.style.textTransform = "uppercase";
+                    }
+                }
+            </script>
+        </div>
+        <div id="stopka">
+            <p>Autor strony: <b>0000000000</b></p>
+        </div>
+    </div>
+</body>
+</html>

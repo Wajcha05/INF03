@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogotowie komputerowe</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="baner">
+            <img src="./klatka.gif" alt="animacja">
+        </div>
+        <div class="menu">
+            <a href="./index.html">O nas</a>
+            <a href="./kontakt.html">Kontakt</a>
+        </div>
+
+        <div id="glowny">
+            <hr>
+            <h2>Kontakt</h2>
+            <form>
+
+                Imię: <input type="text" id="im"><br>
+
+                <label for="nazw">Nazwisko:</label> <input type="text" id="nazw">
+                <br>
+
+                <label for="em">Email:</label> <input type="email" id="em">
+                <br>
+
+                <label for="area">Usługa:</label> <textarea id="area"></textarea>
+                <br>
+                <input type="checkbox" id="check"> <label for="check">Zapoznałem się z regulaminem</label><br>
+                <input type="reset" id="reset"><input type="button" value="Prześlij" id="wyslij" onclick="skrypt()">
+            </form>
+            </table>
+            <span id="span"></span>
+            <hr>
+            <script>
+                function skrypt() {
+                    var imn = document.getElementById("im").value;
+                    var nazwis = document.getElementById("nazw").value;
+                    var email = document.getElementById("em").value;
+                    var usl = document.getElementById("area").value;
+                    var checkbox = document.getElementById("check").checked;
+                    if (checkbox == false) {
+                        span.innerHTML = "<p>Musisz zapoznac sie z regulaminem</p>";
+                        span.style.color = "red";
+                    }
+                    if (checkbox == true) {
+                        span.style.color = "black";
+                        span.innerHTML = "<p id=duze>" + imn + "" + nazwis + "</p><br>Treść Twojej sprawy:" + usl + "<br>Na podany e-mail zostanie wysłana oferta";
+                        duze.style.textTransform = "uppercase";
+                    }
+                }
+            </script>
+        </div>
+        <div class="stopka">
+            <p>Autor strony: <strong>PESEL</strong></p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+body {
+    background-color: #99ffcc;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.baner {
+    background-color: #99ff66;
+    height: 200px;
+}
+
+.menu {
+    background-color: #66ccff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.block1, .block2, .block3 {
+    width: 310px;
+    padding: 10px;
+    float: left;
+}
+
+.stopka {
+    background-color: #66ccff;
+    color: #006666;
+    text-align: right;
+    height: 30px;
+    padding: 20px;
+    clear: both;
+}
+
+.menu a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px; 
+    color: #006666;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#reset {
+    background-color: #ff0000;
+}
+
+#wyslij {
+    background-color: #00ff00;
+}
