@@ -1,0 +1,38 @@
+.banner {
+    background-color: #40271A;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 80px;
+    text-align: center;
+}
+
+.lewy {
+    background-color: #DBB29C;
+    width: 40%;
+    height: 700px;
+    float: left;
+}
+
+.prawy {
+    background-color: #FFE3D4;
+    width: 60%;
+    height: 700px;
+    float: right;
+}
+
+.stopka {
+    background-color: #40271A;
+    color: white;
+    text-align: right;
+}
+
+table, td {
+    border: 1px dashed brown;
+    text-align: center;
+    width: 500px;
+    margin: 10px;
+}
+
+img {
+    padding: 30px;
+}

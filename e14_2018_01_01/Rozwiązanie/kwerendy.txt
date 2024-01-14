@@ -1,0 +1,4 @@
+1. SELECT id, tytul, tresc FROM ogloszenie WHERE kategoria = 1;
+2. SELECT telefon FROM uzytkownik, ogloszenie WHERE uzytkownik.id = ogloszenie.uzytkownik_id AND ogloszenie.id = 1; 
+3. CREATE USER 'moderator' IDENTIFIED BY 'qwerty'; 
+4. GRANT DELETE, SELECT ON `ogloszenia`.* TO 'moderator'; 
