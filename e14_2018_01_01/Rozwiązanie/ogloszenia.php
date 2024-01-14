@@ -55,6 +55,7 @@
             echo "<p>$tabela1[2]</p>";
             echo "<p>telefon kontaktowy: $tabela2[0]</p>";
         }
+        mysqli_close($db);
         ?>
     </section>
     <section  class="stopka">
