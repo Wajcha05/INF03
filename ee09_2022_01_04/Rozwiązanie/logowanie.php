@@ -38,7 +38,7 @@
             $query = "SELECT login FROM uzytkownicy;";
             $output = mysqli_query($db, $query);
             while($row = mysqli_fetch_row($output)){
-                if($login == $row){
+                if($login == $row[0]){
                     echo "<p>login występuje w bazie danych, konto nie zostało dodane</p>";
                     $error = TRUE;
                     break;
