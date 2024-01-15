@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Usługi kosmetyczne</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='styl.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="lewy1">
+        <h2>W ofercie</h2>
+        <ul>
+            <li>
+                <a href="twarz.html">Zabiegi na twarz</a>
+                <ol>
+                    <li>Piling</li>
+                    <li>Maska</li>
+                    <li>Regulacja brwi</li>
+                </ol>
+            </li>
+            <li>Masaż</li>
+            <li>Diety oczyszczające</li>
+        </ul>
+        <a href="index.html">Do strony głównej</a>
+    </div>
+    <div class="prawy1">
+        <h1>Salon Kosmetyczny</h1>
+    </div>
+
+    <div class="prawy2">
+        <h4>Sprawdź cenę swojej wizyty</h4>
+        <input type="checkbox" id="piling">Piling<br>
+        <input type="checkbox" id="maska">Maska<br>
+        <input type="checkbox" id="masaz">Masaż twarzy<br>
+        <input type="checkbox" id="regulacja">Regulacja brwi<br>
+        <input type="button" value="Sprawdź cenę" onclick="oblicz()"><br>
+        <p>Cena zabiegów: <span id="wynik"></span></p>
+    </div>
+    <div class="lewy2">
+        <img src="obraz1.jpg" alt="Koszmetyczka">
+    </div>
+    <div class="stopka">
+        <p>Autor: 00000000</p>
+    </div>
+    <script>
+        function oblicz(){
+            var piling = document.getElementById('piling');
+            var maska = document.getElementById('maska');
+            var masaz = document.getElementById('masaz');
+            var regulacja = document.getElementById('regulacja');
+            var wynik = 0;
+            if(piling.checked == true){
+                wynik += 45;
+            }
+
+            if(maska.checked == true){
+                wynik += 30;
+            }
+
+            if(masaz.checked == true){
+                wynik += 20;
+            }
+
+            if(regulacja.checked == true){
+                wynik += 5;
+            }
+
+            document.getElementById('wynik').innerHTML = wynik;
+        }
+    </script>
+</body>
+</html>
