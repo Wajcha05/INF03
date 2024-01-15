@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi fryzjerskie</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <div class="lewy1">
+        <a href="index.html"><h2>SALON FRYZJERSKI</h2></a>
+        <img src="obraz2.jpg" alt="Czesanie">
+    </div>
+    <div class="prawy1">
+        <h2>MENU</h2>
+    </div>
+    <div class="prawy2">
+        <ol>
+            <li><a href="fryzura.html">Strzyżenie</a>
+                <ul>
+                    <li>krótkie</li>
+                    <li>średnie</li>
+                    <li>półdługie</li>
+                    <li>długie</li>
+                </ul>
+            </li>
+            <li>Czesanie</li>
+            <li>Koloryzacja</li>
+        </ol>
+    </div>
+    <div class="lewy2">
+        <h3>Dziś promocja na strzyżenie włosów</h3>
+        <input type="radio" name="wybor" id="krotkie" value="25">Krótkie<br>
+        <input type="radio" name="wybor" id="srednie" value="30">Średnie<br>
+        <input type="radio" name="wybor" id="poldlugie" value="40">Półdługie<br>
+        <input type="radio" name="wybor" id="dlugie" value="50">Długie<br>
+        <button onclick="klik()">Odkryj promocję</button>
+        <p>Cena strzyżenia: <span id="wynik"></span></p>
+    </div>
+    <div class="prawy3">
+        <img src="obraz1.jpg" alt="Fryzjer">
+    </div>
+    <div class="stopka">
+        <p>Autor: 000000000</p>
+    </div>
+    <script>
+        function klik(){
+            let forma = document.querySelector('input[name="wybor"]:checked').value;
+            document.getElementById('wynik').innerHTML = forma;
+        }
+    </script>
+</body>
+</html>
