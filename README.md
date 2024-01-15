@@ -52,3 +52,11 @@
 > Przypuszczane daty wystąpienia tego artykułu na egzaminie (lub jej lekkiej zmiany): 17.01.2024 r. godz 12:30, 18.01.2024 r. godz 17:00
 >
 >  Autor rozwiązania: Sonic Song
+
+### [Arkusz inf03_2024_01_01](https://github.com/Wajcha05/INF03/tree/main/inf03_2024_01_01)
+
+> Języki: HTML, CSS, JS
+>  
+> Przypuszczane daty wystąpienia tego artykułu na egzaminie (lub jej lekkiej zmiany): 15.01.2024 r. godz 8:00, 17:00
+>
+>  Autor rozwiązania: 11001101
