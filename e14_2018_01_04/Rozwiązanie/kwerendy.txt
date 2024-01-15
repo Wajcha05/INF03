@@ -1,0 +1,4 @@
+1. INSERT INTO uzytkownik VALUES (NULL, 'Jolanta', 'Jasny', 600600600, 'jolanta@poczta.pl'); 
+2. SELECT tytul, tresc, podkategoria FROM ogloszenie WHERE uzytkownik_id = 1 AND kategoria = 1; 
+3. CREATE USER 'jolanta'@'localhost' IDENTIFIED BY 'jol1@';
+4. GRANT SELECT, UPDATE ON uzytkownik.* TO 'jolanta'@'localhost'; 
