@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma IT</title>
+    <link rel="shortcut icon" href="./grafika/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <header>
+            <section class="logo">
+                <img src="grafika/logo.png" alt="firma it">
+            </section>
+            <nav>
+                <a href="./index.html">Strona Główna</a>
+                <a href="./uslugi.html">Usługi</a>
+                <a href="./kontakt.html">Kontakt</a>
+            </nav>
+        </header>
+        <section class="baner">
+            <img src="./grafika/animacja.gif" alt="Usługi informatyczne">
+        </section>
+        <section class="blockglowny">
+            <form>
+                <table>
+                    <tr>
+                        <td>Imię:</td>
+                        <td>
+                            <input type="text" name="imie" id="imn">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td>
+                            <input type="text" name="nazw" id="nazw">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>
+                            <input type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zgłoszenie:</td>
+                        <td>
+                            <textarea name="wiadomosc" id="wiadomosc" cols="40" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="zgoda" id="zgoda"> Zapoznałem się z regulaminem
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="reset" id="reset"> <input type="button" value="Prześlij" id="wyslij"
+                                onclick="skrypt()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <hr>
+            
+            <span id="span"></span>
+
+            <script>
+                function skrypt() {
+                    var imn = document.getElementById("imn").value;
+                    var nazwis = document.getElementById("nazw").value;
+                    var email = document.getElementById("email").value;
+                    var usl = document.getElementById("wiadomosc").value;
+                    var checkbox = document.getElementById("zgoda").checked;
+                    var span = document.getElementById("span");
+                    if (checkbox == false) {
+                        span.innerHTML = "<p>Musisz zapoznac sie z regulaminem</p>";
+                        span.style.color = "red";
+                    }
+                    if (checkbox == true) {
+                        span.style.color = "black";
+                        span.innerHTML = "<p id=duze>" + imn + " " + nazwis + "</p><br><p id=navy>Treść Twojej sprawy:" + usl + "<br></p>";
+                        duze.style.textTransform = "uppercase";
+                        navy.style.color = "navy";
+                    }
+                }
+            </script>
+        </section>
+        <footer>
+            <p>Stronę opracował: <strong>PESEL</strong></p>
+        </footer>
+
+    </section>
+</body>
+
+</html>
