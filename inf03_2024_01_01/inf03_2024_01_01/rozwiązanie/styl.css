@@ -1,6 +1,6 @@
 body {
     background-color: #eeeeee;
-    font-family: Helvetica;
+    font-family: Helvetica;    
 }
 
 .container {
@@ -20,34 +20,36 @@ body {
 .baner {
     background-color: #DDDDDD;
     height: 200px;
-    float: left;
+    clear: both;    
 }
 
 .blockglowny {
     color: navy;
     margin: 50px;
     height: 400px;
-    float: left;
+    
 }
 
 footer {
     text-align: right;
     background-color: lightblue;
     padding: 10px;
-    clear: both;
+    
 }
 
-button {
+input[type="reset"], input[type="button"]{
     background-color: lightblue;
     color: navy;
 }
 
 nav a {
     text-decoration: none;
+    font-weight: bolder;
     color: navy;
     font-size: 150%;
     padding: 5px;
     margin: 10px;
+
 }
 
 nav a:hover {
