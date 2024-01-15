@@ -1,0 +1,57 @@
+body {
+    background-color: #eeeeee;
+    font-family: Helvetica;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.logo, nav {
+    width: 50%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightblue;
+    height: 100px;
+}
+
+.baner {
+    background-color: #DDDDDD;
+    height: 200px;
+    float: left;
+}
+
+.blockglowny {
+    color: navy;
+    margin: 50px;
+    height: 400px;
+    float: left;
+}
+
+footer {
+    text-align: right;
+    background-color: lightblue;
+    padding: 10px;
+    clear: both;
+}
+
+button {
+    background-color: lightblue;
+    color: navy;
+}
+
+nav a {
+    text-decoration: none;
+    color: navy;
+    font-size: 150%;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav a:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: navy;
+}
