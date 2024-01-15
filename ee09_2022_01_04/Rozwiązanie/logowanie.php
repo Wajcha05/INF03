@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styl4.css">
 </head>
 <body>
-    <section class="banner">
+    <section class="baner">
         <h1>Forum wielbicieli psów</h1>
     </section>
     <section class="lewy">
@@ -15,43 +15,43 @@
     </section>
     <section class="prawy1">
         <h2>Zapisz się</h2>
-        <form action="logowanie.php" method="post" class="form">
-            <label>login: <input type="text" name="login"><br></label>
-            <label>haslo: <input type="password" name="haslo"><br></label>
-            <label>powtórz hasło: <input type="password" name="haslor"><br></label>
-            <button type="submit">Zapisz</button>
+        <form action="" method="post">
+            <label>login: </label><input type="text" name="login"><br>
+            <label>hasło: </label><input type="password" name="pass"><br>
+            <label>powtórz hasło: </label><input type="password" name="passr"><br>
+            <button type="submit" name="button">Zapisz</button>
         </form>
-        <?php
+        <?php 
         $db = mysqli_connect('localhost', 'root', '', 'psy');
 
-        if(isset($_POST['login']) && isset($_POST['haslo']) && isset($_POST['haslor'])){
+        if(isset($_POST['button'])){
             $login = $_POST['login'];
-            $haslo = $_POST['haslo'];
-            $haslor = $_POST['haslor'];
+            $pass = $_POST['pass'];
+            $passr = $_POST['passr'];
             $error = FALSE;
-            
-            if($login == '' || $haslo == '' || $haslor == ''){
+
+            if($login == '' || $pass == '' || $passr == ''){
                 echo "<p>wypełnij wszystkie pola</p>";
                 $error = TRUE;
             }
 
-            $query = "SELECT login FROM `uzytkownicy`;";
-            $res = mysqli_query($db, $query);
-            while($tab = mysqli_fetch_row($res)){
-                if($login == $tab[0]){
+            $query = "SELECT login FROM uzytkownicy;";
+            $output = mysqli_query($db, $query);
+            while($row = mysqli_fetch_row($output)){
+                if($login == $row[0]){
                     echo "<p>login występuje w bazie danych, konto nie zostało dodane</p>";
                     $error = TRUE;
                     break;
                 }
             }
 
-            if($haslo != $haslor){
-                echo "<p>hasła nie są takie same, konto nie zostało dodane</p>";
+            if($pass != $passr){
+                echo "<p>hasło nie są takie same, konto nie zostało dodane</p>";
                 $error = TRUE;
             }
-
+            
             if($error == FALSE){
-                $cipher = sha1($haslo);
+                $cipher = sha1($pass);
                 $query2 = "INSERT INTO uzytkownicy VALUES (NULL, '$login', '$cipher');";
                 mysqli_query($db, $query2);
                 echo "<p>Konto zostało dodane</p>";
@@ -59,20 +59,20 @@
         }
 
         mysqli_close($db);
-    ?>
+        ?>
     </section>
     <section class="prawy2">
         <h2>Zapraszamy wszystkich</h2>
         <ol>
-            <li>właściciel psów</li>
-            <li>weterynarzy</li>
+            <li>właścicieli psów</li>
+            <li>weterynarz</li>
             <li>tych co chcą kupić psa</li>
             <li>tych, co lubią psy</li>
         </ol>
         <a href="regulamin.html">Przeczytaj regulamin forum</a>
     </section>
     <section class="stopka">
-        Stronę wykonał: 0000000000
+        <label>Stronę wykonał: 00000000</label>
     </section>
 </body>
 </html>
